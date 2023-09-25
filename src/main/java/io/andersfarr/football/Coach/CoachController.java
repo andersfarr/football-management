@@ -22,7 +22,7 @@ public class CoachController {
 		return coachService.getAllCoaches(name);
 	}
 	
-	@RequestMapping("/teams/{teamId}/coaches/{coachId}")
+	@RequestMapping("/teams/{teamId}/coaches/{coachName}")
 	public Coach getCoach(@PathVariable String coachName) {
 		return coachService.getCoach(coachName);
 	}
@@ -39,7 +39,7 @@ public class CoachController {
 		coachService.updateCoach(coach);
 	}
 	
-	@RequestMapping(method=RequestMethod.DELETE, value="/topics/{teamName}/courses/{coachName}")
+	@RequestMapping(method=RequestMethod.DELETE, value="/teams/{teamName}/coaches/{coachName}")
 	public void deleteTopic(@PathVariable String coachName) {
 		coachService.deleteCoach(coachName);
 	}
