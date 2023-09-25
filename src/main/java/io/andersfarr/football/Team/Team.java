@@ -1,4 +1,4 @@
-package io.javabrains.Team;
+package io.andersfarr.football.Team;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

@@ -1,4 +1,4 @@
-package io.javabrains.Team;
+package io.andersfarr.football.Team;
 
 import java.util.ArrayList;
 import java.util.List;
