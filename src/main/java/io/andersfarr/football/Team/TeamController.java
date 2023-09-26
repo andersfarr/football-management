@@ -31,12 +31,12 @@ public class TeamController {
 	}
 	
 	@RequestMapping(method=RequestMethod.PUT, value="/teams/{name}")
-	public void updateTopic(@PathVariable String name, @RequestBody Team team) {
+	public void updateTeam(@PathVariable String name, @RequestBody Team team) {
 		teamService.updateTeam(name, team);
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE, value="/teams/{name}")
-	public void deleteTopic(@PathVariable String name) {
+	public void deleteTeam(@PathVariable String name) {
 		teamService.deleteTeam(name);
 	}
 
