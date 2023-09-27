@@ -40,7 +40,7 @@ public class CoachController {
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE, value="/teams/{teamName}/coaches/{coachName}")
-	public void deleteTopic(@PathVariable String coachName) {
+	public void deleteCoach(@PathVariable String coachName) {
 		coachService.deleteCoach(coachName);
 	}
 }

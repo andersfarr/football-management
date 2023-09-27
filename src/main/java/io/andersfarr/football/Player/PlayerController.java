@@ -39,7 +39,7 @@ public class PlayerController {
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE, value="/teams/{teamName}/players/{playerName}")
-	public void deleteTopic(@PathVariable String playerName) {
+	public void deletePlayer(@PathVariable String playerName) {
 		playerService.deletePlayer(playerName);
 	}
 
