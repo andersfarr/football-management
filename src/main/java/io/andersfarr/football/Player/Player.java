@@ -11,15 +11,19 @@ public class Player {
 	@Id
 	private String name;
 	private String position;
+	private int number;
+	private int age;
 	
 	@ManyToOne
 	private Team team;
 	
 	public Player() {}
 	
-	public Player(String name, String position, Team team) {
+	public Player(String name, String position, int number, int age, Team team) {
 		this.name = name;
 		this.position = position;
+		this.number = number;
+		this.age = age;
 		this.team = team;
 	}
 
@@ -45,6 +49,22 @@ public class Player {
 
 	public void setTeam(Team team) {
 		this.team = team;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 }
